@@ -38,6 +38,20 @@ Page({
       regionIndex: e.detail.value
     })
   },
+  confirmFilter: function() {
+    let code = this.data.region[this.data.regionIndex].code
+    let pages = getCurrentPages(); //获取当前页面js里面的pages里的所有信息。
+    let prevPage = pages[ pages.length - 2 ]; //上一个页面的js里面的pages的所有信息
+    console.log(pages)
+    // prevPage.setData({  // 将我们想要传递的参数在这里直接setData。上个页面就会执行这里的操作。
+    //     regionCode: code,
+    //     business : '101',
+    //     metro : '2'
+    // })
+    wx.navigateBack({
+      delta: 1 //返回上一级
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载

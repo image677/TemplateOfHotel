@@ -12,5 +12,5 @@
 
 <view class='filterMenu'>
      <text class='clear'>清除筛选</text>
-     <text class='confirm'>确定</text>
+     <text class='confirm' bindtap="confirmFilter">确定</text>
 </view>

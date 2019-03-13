@@ -11,7 +11,7 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.0.9",
+	"libVersion": "2.6.2",
 	"appid": "wx543e594fb055e2c0",
 	"projectname": "TemplateOfHotel",
 	"isGameTourist": false,
