@@ -5,7 +5,38 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    // region: ['宝安区','南山区','福田区','龙岗区'],
+    region: [
+      {
+        code: 201,
+        name: '宝安区'
+      },
+      {
+        code: 306,
+        name: '南山区'
+      },
+      {
+        code: 107,
+        name: '福田区'
+      },
+      {
+        code: 318,
+        name: '龙岗区'
+      },
+      {
+        code: 219,
+        name: '龙华区'
+      }
+    ],
+    regionIndex: 1
+  },
+
+  bindPickerChange(e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    console.log('picker发送选择改变，携带code为', this.data.region[e.detail.value].code)
+    this.setData({
+      regionIndex: e.detail.value
+    })
   },
 
   /**

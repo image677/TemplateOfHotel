@@ -146,7 +146,7 @@ Page({
                })
           } else {
                wx.navigateTo({
-                    url: '../../pages/searchHotel/searchHotel?location=' + this.data.location,
+                    url: '../../pages/hotelFilter/hotelFilter?location=' + this.data.location,
                })
           }
      },

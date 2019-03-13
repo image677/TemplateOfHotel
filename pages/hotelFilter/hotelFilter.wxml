@@ -2,8 +2,10 @@
 <import src='template.wxml' />
 
 <view class='filterContent'>
-     <template is='settingItem' data="{{caption:'酒店位置',value:'',needIcon:false}}" />
-     <template is='settingItem' data="{{caption:'行政区域 ',value:'南山区 ',needIcon:true}}" />
+     <template is='settingItem' data="{{caption:'酒店位置',value:'深圳市',needIcon:false}}" />
+     <picker bindchange="bindPickerChange" value="{{regionIndex}}" range="{{region}}" range-key="{{'name'}}">
+     <template is='settingItem' data="{{caption:'行政区域 ',value:region[regionIndex].name,needIcon:true}}" />
+     </picker>
      <template is='settingItem' data="{{caption:'商圈 ',value:'xx商圈 ',needIcon:true}}" />
      <template is='settingItem' data="{{caption:'地铁 ',value:'深大地铁站 ',needIcon:true}}" />
 </view>

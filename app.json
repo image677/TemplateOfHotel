@@ -35,4 +35,9 @@
                }
           ]
      }
+     ,"permission": {
+      "scope.userLocation": {
+        "desc": "根据当前位置提供对应服务信息"
+      }
+    }
 }
